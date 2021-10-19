@@ -28,7 +28,7 @@
                 Previously, I worked in <a href="https://www.telefonica.com/en/web/innovation/core-innovation/research">Telefónica Research</a>, advised by <a href="https://www.linkedin.com/in/jordi-luque-0736b47/">Jordi Luque</a> and <a href="https://www.linkedin.com/in/carlos-segura-perales-80677765/">Carlos Segura</a>.
               </p>
               <p style="text-align:center">
-                <a href="mailto:davidbonet@gmail.com">Email</a> &nbsp/&nbsp
+                <a href="mailto:davidbonetsole@gmail.com">Email</a> &nbsp/&nbsp
                 <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp -->
                 <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp -->
                 <a href="https://scholar.google.com/citations?user=ryl2ZnUAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
@@ -95,42 +95,92 @@
           </tr>
 
 
-          <td width="15%" valign="center" align="center"><img c="images/cwdeepnnk.png" alt="nthu" width="200"></td>
+
+          <td width="15%" valign="center" align="center"><img c="images/sewuw.png" alt="nthu" width="200"></td>
           </td>
           <td width="85%" style="padding:20px;vertical-align:middle">
-            <a class="tog" href="#cwdeepnnk">
-              <papertitle>Channel-Wise Early Stopping without a Validation Set via NNK Polytope Interpolation</papertitle>
+            <a class="tog" href="#sewuw">
+              <papertitle>Speech Enhancement for Wake-Up-Word detection in Voice Assistants</papertitle>
             </a>
             <br>
             <strong>David Bonet</strong>,
-                    <a href="https://scholar.google.com/citations?user=K4bCJYcAAAAJ&hl=en" target="_blank">Antonio Ortega</a>,
-                    <a href="https://scholar.google.es/citations?user=1eAA6ggAAAAJ&hl=en" target="_blank">Javier Ruiz-Hidalgo</a>,
-                    <a href="https://shekkizh.github.io/" target="_blank">Sarath Shekkizhar</a>,
+                    <a href="https://www.linkedin.com/in/guillermocambara/" target="_blank">Guillermo Cámbara</a>,
+                    <a href="https://www.linkedin.com/in/wiliam-fernando-l%C3%B3pez-gavil%C3%A1nez-956410153/" target="_blank">Fernando López</a>,
+                    <a href="https://www.linkedin.com/in/pablo-gomez-guerrero/" target="_blank">Pablo Gómez</a>,
+                    <a href="https://www.linkedin.com/in/carlos-segura-perales-80677765/" target="_blank">Carlos Segura</a>,
+                    <a href="https://www.linkedin.com/in/mireia-farr%C3%BAs-9b767b7/" target="_blank">Mireia Farrús</a>,
+                    <a href="https://www.linkedin.com/in/jordi-luque-0736b47/" target="_blank">Jordi Luque</a>,
                     <br>
             <p></p>
-            <em>Asia Pacific Signal and Information Processing Association (APSIPA), 2021</em>
-            <div class="paper" id="bonet2021channel">
-              <a href="https://arxiv.org/pdf/2107.12972.pdf" target="_blank">paper</a> /
-              <a href="https://github.com/STAC-USC/CW-DeepNNK_Early_Stopping" target="_blank">code</a> /  
-                <a class="tog" href="javascript:toggleblock('cwdeepnnk_abs')">abstract</a> / 
-                <a class="tog" href="javascript:toggleblock('cwdeepnnk_bib')">bibtex</a>
+            <em>IberSPEECH, 2020</em>
+            <div class="paper" id="bonet21_iberspeech">
+              <a href="https://www.isca-speech.org/archive/pdfs/iberspeech_2021/bonet21_iberspeech.pdf" target="_blank">paper</a> /
+                <a class="tog" href="javascript:toggleblock('sewuw_abs')">abstract</a> / 
+                <a class="tog" href="javascript:toggleblock('sewuw_bib')">bibtex</a>
                 <p align="justify">
-                  <i id="cwdeepnnk_abs">
-                    State-of-the-art neural network architectures continue to scale in size and deliver impressive generalization results, although this comes at the expense of limited interpretability. In particular, a key challenge is to determine when to stop training the model, as this has a significant impact on generalization. Convolutional neural networks (ConvNets) comprise high-dimensional feature spaces formed by the aggregation of multiple channels, where analyzing intermediate data representations and the model's evolution can be challenging owing to the curse of dimensionality. We present channel-wise DeepNNK (CW-DeepNNK), a novel channel-wise generalization estimate based on non-negative kernel regression (NNK) graphs with which we perform local polytope interpolation on low-dimensional channels. This method leads to instance-based interpretability of both the learned data representations and the relationship between channels. Motivated by our observations, we use CW-DeepNNK to propose a novel early stopping criterion that (i) does not require a validation set, (ii) is based on a task performance metric, and (iii) allows stopping to be reached at different points for each channel. Our experiments demonstrate that our proposed method has advantages as compared to the standard criterion based on validation set performance.
+                  <i id="sewuw_abs">
+                    Keyword spotting and in particular Wake-Up-Word (WUW) detection is a very important task for voice assistants. A very common issue of voice assistants is that they get easily activated by background noise like music, TV or background speech that accidentally triggers the device. In this paper, we propose a Speech Enhancement (SE) model adapted to the task of WUW detection that aims at increasing the recognition rate and reducing the false alarms in the presence of these types of noises. The SE model is a fully-convolutional denoising auto-encoder at waveform level and is trained using a log-Mel Spectrogram and waveform reconstruction losses together with the BCE loss of a simple WUW classification network. A new database has been purposely prepared for the task of recognizing the WUW in challenging conditions containing negative samples that are very phonetically similar to the keyword. The database is extended with public databases and an exhaustive data augmentation to simulate different noises and environments. The results obtained by concatenating the SE with a simple and state-of-the-art WUW detectors show that the SE does not have a negative impact on the recognition rate in quiet environments while increasing the performance in the presence of noise, especially when the SE and WUW detector are trained jointly end-to-end.
                   </i>
                 </p>
-                <bibtext xml:space="preserve" id="cwdeepnnk_bib">
-                                      @article{bonet2021channel, <br />
-                                        title={Channel-Wise Early Stopping without a Validation Set via NNK Polytope Interpolation}, <br />
-                                        author={Bonet, David and Ortega, Antonio and Ruiz-Hidalgo, Javier and Shekkizhar, Sarath}, <br />
-                                        journal={Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)}, <br />
-                                        year={2021} <br />
+                <bibtext xml:space="preserve" id="sewuw_bib">
+                                      @inproceedings{bonet21_iberspeech, <br />
+                                        author={David Bonet and Guillermo Cámbara and Fernando López and Pablo Gómez and Carlos Segura and Jordi Luque and Mireia Farrús}, <br />
+                                        title={{Speech Enhancement for Wake-Up-Word detection in Voice Assistants}}, <br />
+                                        year=2021, <br />
+                                        booktitle={Proc. IberSPEECH 2021}, <br />
+                                        pages={41--45}, <br />
+                                        doi={10.21437/IberSPEECH.2021-9} <br />
                                       }
                   </bibtext>
               </div>              
-              <script language="JavaScript">hideblock('cwdeepnnk_bib');hideblock('cwdeepnnk_abs');</script>
+              <script language="JavaScript">hideblock('sewuw_bib');hideblock('sewuw_abs');</script>
           </td>
           </tr>
+
+
+
+
+          <td width="15%" valign="center" align="center"><img c="images/bcn2brno.png" alt="nthu" width="200"></td>
+        </td>
+        <td width="85%" style="padding:20px;vertical-align:middle">
+          <a class="tog" href="#bcn2brno">
+            <papertitle>BCN2BRNO: ASR System Fusion for Albayzin 2020 Speech to Text Challenge</papertitle>
+          </a>
+          <br>
+                  <a href="https://www.linkedin.com/in/martinkocour/" target="_blank">Martin Kocour</a>,
+                  <a href="https://www.linkedin.com/in/guillermocambara/" target="_blank">Guillermo Cámbara</a>,
+                  <a href="https://www.linkedin.com/in/jordi-luque-0736b47/" target="_blank">Jordi Luque</a>,
+                  <strong>David Bonet</strong>,
+                  <a href="https://www.linkedin.com/in/mireia-farr%C3%BAs-9b767b7/" target="_blank">Mireia Farrús</a>,
+                  <a href="https://scholar.google.com/citations?user=qNo33PkAAAAJ&hl=en&oi=ao" target="_blank">Martin Karafiat</a>,
+                  <a href="https://scholar.google.com/citations?user=BpPsV98AAAAJ&hl=en" target="_blank">Karel Veselý</a>,
+                  <a href="https://scholar.google.com/citations?user=BnfCLXcAAAAJ&hl=en&oi=sra" target="_blank">Jan Cernocky</a>,
+                  <br>
+          <p></p>
+          <em>IberSPEECH, 2020</em>
+          <div class="paper" id="kocour21_iberspeech">
+            <a href="https://www.isca-speech.org/archive/pdfs/iberspeech_2021/kocour21_iberspeech.pdf" target="_blank">paper</a> /
+              <a class="tog" href="javascript:toggleblock('bcn2brno_abs')">abstract</a> / 
+              <a class="tog" href="javascript:toggleblock('bcn2brno_bib')">bibtex</a>
+              <p align="justify">
+                <i id="bcn2brno_abs">
+                  This paper describes the joint effort of BUT and Telefónica Research on the development of Automatic Speech Recognition systems for the Albayzin 2020 Challenge. We compare approaches based on either hybrid or end-to-end models. In hybrid modelling, we explore the impact of a SpecAugment layer on performance. For end-to-end modelling, we used a convolutional neural network with gated linear units (GLUs). The performance of such model is also evaluated with an additional n-gram language model to improve word error rates. We further inspect source separation methods to extract speech from noisy environments (i.e. TV shows). More precisely, we assess the effect of using a neural-based music separator named Demucs. A fusion of our best systems achieved 23.33 % WER in official Albayzin 2020 evaluations. Aside from techniques used in our final submitted systems, we also describe our efforts in retrieving high-quality transcripts for training.
+                </i>
+              </p>
+              <bibtext xml:space="preserve" id="bcn2brno_bib">
+                                    @inproceedings{kocour21_iberspeech, <br />
+                                      author={Martin Kocour and Guillermo Cámbara and Jordi Luque and David Bonet and Mireia Farrús and Martin Karafiát and Karel Veselý and Jan Černocký}, <br />
+                                      title={{BCN2BRNO: ASR System Fusion for Albayzin 2020 Speech to Text Challenge}}, <br />
+                                      year=2021, <br />
+                                      booktitle={Proc. IberSPEECH 2021}, <br />
+                                      pages={113--117}, <br />
+                                      doi={10.21437/IberSPEECH.2021-24} <br />
+                                    }
+                </bibtext>
+            </div>              
+            <script language="JavaScript">hideblock('bcn2brno_bib');hideblock('bcn2brno_abs');</script>
+        </td>
+        </tr>
 
 					
 
